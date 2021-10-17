@@ -20,7 +20,6 @@ class TatySerializer(serializers.ModelSerializer):
 
 
 class CreateTatySerializer(serializers.ModelSerializer):
-    user = UserSerializer
 
     class Meta:
         model = Taty
