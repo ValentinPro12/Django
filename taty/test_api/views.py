@@ -24,13 +24,12 @@ class TatyList(generics.ListAPIView):
 # TODO обновление записи, пока не понял как это работает
 
 class TatyRetrieveUpdateView(generics.RetrieveUpdateAPIView):
-    queryset = Taty.objects.all
+    queryset = Taty.objects.all()
     serializer_class = TatySerializer
 
 
-# TODO тут ошибка, что то не так с URLS надо разобраться
-class TatyCreateView(generics.UpdateAPIView):
-    queryset = Taty.objects.all
+class TatyCreateView(generics.CreateAPIView):
+    queryset = Taty.objects.all()
     serializer_class = CreateTatySerializer
 
 
